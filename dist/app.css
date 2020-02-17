@@ -7,13 +7,12 @@
 body {
   font-family: "Lato", sans-serif;
   font-size: 1em;
+  color: #58402C;
 }
 
 header .wrapper {
   margin: auto;
   width: 80%;
-  height: 800px;
-  background-color: lightgreen;
 }
 
 header .wrapper_menu {
@@ -21,8 +20,14 @@ header .wrapper_menu {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-  height: 100px;
+  height: 70px;
   border-bottom: 1px solid #58402C;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
 }
 
 .links li {
@@ -31,10 +36,102 @@ header .wrapper_menu {
   padding-right: 30px;
 }
 
-.links a {
+ul li a {
   text-decoration: none;
   color: #58402C;
   font-size: 0.9em;
   font-weight: bold;
+}
+
+ul li a:hover {
+  color: #233569;
+}
+
+.button_menu {
+  padding: 0px 20px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: #58402C;
+  text-decoration: none;
+}
+
+.button_menu:hover {
+  background-color: #233569;
+  color: white;
+}
+
+.button_menu:hover i {
+  color: white;
+}
+
+.google_icon {
+  padding-right: 5px;
+}
+
+.menu_icon {
+  padding-left: 5px;
+}
+
+.jumbo {
+  display: flex;
+  padding: 80px 0;
+}
+
+.jumbo h1 {
+  font-size: 3em;
+}
+
+.jumbo h2 {
+  font-weight: normal;
+  font-size: 1.4em;
+}
+
+.jumbo .text {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.jumbo .text h1 {
+  line-height: 60px;
+}
+
+.jumbo .pic {
+  width: 50%;
+}
+
+.jumbo h1,
+h2,
+.button_box {
+  padding-bottom: 30px;
+}
+
+.jumbo_btn {
+  padding: 0px 20px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: #58402C;
+  text-decoration: none;
+  background-color: #30488f;
+  color: white;
+  font-size: 1em;
+  padding: 5px 20px;
+}
+
+.jumbo_btn:hover {
+  background-color: #233569;
+}
+
+.pic img {
+  width: 100%;
+}
+
+.bottom_link {
+  text-decoration: none;
+  color: #58402C;
+  font-size: 0.9em;
+}
+
+.bottom_link:hover {
+  color: #000066;
 }
 
