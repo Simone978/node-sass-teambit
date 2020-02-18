@@ -1,0 +1,121 @@
+header .wrapper {
+  margin: auto;
+  width: 80%;
+  &_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 70px;
+    border-bottom: 1px solid $fontColorMain;
+  }
+}
+
+// Menu
+.links {
+  display: flex;
+  justify-content: center;
+  line-height: 30px
+}
+.links li {
+  list-style:none;
+  display: inline;
+  padding-right: 30px;
+}
+ul li a {
+  text-decoration: none;
+  color: $fontColorMain;
+  font-size: $fontSize - 0.1;
+  font-weight: bold;
+  &:hover {
+    color: $buttonColor;
+  }
+}
+
+.button_menu {
+  @include button;
+  &:hover {
+    background-color: $buttonColor;
+    color: white;
+  }&:hover i{
+    color: white;
+  }
+}
+.google_icon {
+  padding-right: 5px;
+}
+.menu_icon {
+  padding-left: 5px;
+}
+
+.bars {
+  display: none;
+}
+
+// header content
+.jumbo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0;
+  & h1{
+    font-size: $fontSize + 2;
+  }
+  & h2{
+    font-weight: normal;
+    font-size: $fontSize + 0.4;
+  }
+  & .text {
+    width: 40%;
+    margin-right: 10%;
+  }
+  & .text h1 {
+    line-height: 60px;
+  }
+  & .pic {
+    width: 50%;
+  }
+}
+.jumbo h1, h2,.button_box {
+  padding-bottom: 30px;
+}
+.jumbo_btn {
+  @include button;
+  background-color: #30488f;
+  color: white;
+  font-size: $fontSize;
+  padding: 5px 20px;
+  &:hover {
+    background-color: $buttonColor;
+  }
+}
+
+.pic img {
+  width: 100%;
+}
+
+.bottom_link {
+  @include link;
+  font-size: $fontSize - 0.1;
+  &:hover {
+    color: darken($blue, +30);
+  }
+}
+
+@media screen and (max-width:'767px'){
+  .links {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+  }
+}
+
+@media screen and (max-width:'1147px'){
+  .jumbo .text {
+    width: 100%;
+  }
+  .jumbo .pic {
+    width: 90%;
+  }
+}
