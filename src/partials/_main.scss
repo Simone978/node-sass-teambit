@@ -1,0 +1,43 @@
+
+.rabbit_container {
+  width: 100%;
+  background-color: $rabbit_space;
+}
+
+.rabbit_wrapper {
+  margin: auto;
+  width: 60%;
+  border-bottom: 1px solid $fontColorMain;
+  .rabbit_up h2 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+    padding: $rabbit_distance 0;
+  }
+  .puppet_box{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: $rabbit_distance;
+  }
+  .threebox {
+    width: 200px;
+  }
+  .threebox img {
+    width: auto;
+    height: 140px;
+    padding-bottom: 20px;
+  }
+  .threebox p {
+    font-size: $fontSize + 0.1;
+    text-align: center;
+  }
+  .rabbit_bottom {
+    padding-bottom: $rabbit_distance;
+  }
+  .rabbit_bottom img {
+    height: 300px;
+    display: block;
+    margin: auto;
+  }
+}

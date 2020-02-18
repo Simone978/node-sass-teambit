@@ -160,3 +160,53 @@ h2,
   }
 }
 
+.rabbit_container {
+  width: 100%;
+  background-color: #FFE7D2;
+}
+
+.rabbit_wrapper {
+  margin: auto;
+  width: 60%;
+  border-bottom: 1px solid #58402C;
+}
+
+.rabbit_wrapper .rabbit_up h2 {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 600px;
+  padding: 80px 0;
+}
+
+.rabbit_wrapper .puppet_box {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 80px;
+}
+
+.rabbit_wrapper .threebox {
+  width: 200px;
+}
+
+.rabbit_wrapper .threebox img {
+  width: auto;
+  height: 140px;
+  padding-bottom: 20px;
+}
+
+.rabbit_wrapper .threebox p {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.rabbit_wrapper .rabbit_bottom {
+  padding-bottom: 80px;
+}
+
+.rabbit_wrapper .rabbit_bottom img {
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+
