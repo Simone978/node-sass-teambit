@@ -78,12 +78,18 @@ ul li a {
 .jumbo h1, h2,.button_box {
   padding-bottom: 30px;
 }
+.button_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .jumbo_btn {
   @include button;
   background-color: #30488f;
   color: white;
   font-size: $fontSize;
   padding: 5px 20px;
+  min-width: 200px;
   &:hover {
     background-color: $buttonColor;
   }
@@ -102,6 +108,7 @@ ul li a {
 }
 
 @media screen and (max-width:'767px'){
+
   .links {
     display: none;
   }
@@ -109,6 +116,10 @@ ul li a {
   .bars {
     display: block;
   }
+  .jumbo_btn {
+    margin-bottom: 10px;
+  }
+
 }
 
 @media screen and (max-width:'1147px'){

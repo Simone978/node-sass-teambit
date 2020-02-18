@@ -114,6 +114,12 @@ h2,
   padding-bottom: 30px;
 }
 
+.button_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .jumbo_btn {
   padding: 0px 20px;
   border: 1px solid blue;
@@ -124,6 +130,7 @@ h2,
   color: white;
   font-size: 1em;
   padding: 5px 20px;
+  min-width: 200px;
 }
 
 .jumbo_btn:hover {
@@ -151,6 +158,10 @@ h2,
 
   .bars {
     display: block;
+  }
+
+  .jumbo_btn {
+    margin-bottom: 10px;
   }
 }
 
@@ -221,6 +232,12 @@ h2,
 }
 
 @media screen and (max-width: 770px) {
+  .rabbit_wrapper {
+    margin: auto;
+    width: 80%;
+    border-bottom: 1px solid #58402C;
+  }
+
   .threebox {
     padding-bottom: 30px;
   }
