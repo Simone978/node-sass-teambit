@@ -10,6 +10,10 @@ body {
   color: #58402C;
 }
 
+.center {
+  text-align: center;
+}
+
 header .wrapper {
   margin: auto;
   width: 80%;
@@ -79,7 +83,7 @@ ul li a:hover {
 .jumbo {
   display: flex;
   flex-wrap: wrap;
-  padding: 80px 0;
+  padding: 80px 0 180px;
 }
 
 .jumbo h1 {
@@ -165,6 +169,10 @@ h2,
   background-color: #FFE7D2;
 }
 
+.rabbit_up {
+  padding: 80px 0;
+}
+
 .rabbit_wrapper {
   margin: auto;
   width: 60%;
@@ -176,13 +184,13 @@ h2,
   margin: auto;
   text-align: center;
   width: 600px;
-  padding: 80px 0;
 }
 
 .rabbit_wrapper .puppet_box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 80px;
+  padding: 80px 0;
 }
 
 .rabbit_wrapper .threebox {
@@ -190,6 +198,8 @@ h2,
 }
 
 .rabbit_wrapper .threebox img {
+  display: block;
+  margin: auto;
   width: auto;
   height: 140px;
   padding-bottom: 20px;
@@ -208,5 +218,15 @@ h2,
   height: 300px;
   display: block;
   margin: auto;
+}
+
+@media screen and (max-width: 770px) {
+  .threebox {
+    padding-bottom: 30px;
+  }
+
+  .rabbit_wrapper .rabbit_up h2 {
+    width: 400px;
+  }
 }
 

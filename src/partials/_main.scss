@@ -3,27 +3,32 @@
   width: 100%;
   background-color: $rabbit_space;
 }
-
+.rabbit_up {
+    padding: $rabbit_distance 0;
+}
 .rabbit_wrapper {
   margin: auto;
   width: 60%;
-  border-bottom: 1px solid $fontColorMain;
+  border-bottom: 1px solid
+ $fontColorMain;
   .rabbit_up h2 {
     display: block;
     margin: auto;
     text-align: center;
     width: 600px;
-    padding: $rabbit_distance 0;
   }
   .puppet_box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: $rabbit_distance;
+    padding: $rabbit_distance 0;
   }
   .threebox {
     width: 200px;
   }
   .threebox img {
+    display: block;
+    margin: auto;
     width: auto;
     height: 140px;
     padding-bottom: 20px;
@@ -40,4 +45,16 @@
     display: block;
     margin: auto;
   }
+}
+
+@media screen and (max-width:'770px'){
+
+  .threebox{
+    padding-bottom: 30px;
+  }
+
+  .rabbit_wrapper .rabbit_up h2 {
+    width: 400px;
+  }
+
 }
